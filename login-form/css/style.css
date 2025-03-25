@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: coral;
+}
+.header {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin: 10px;
+  padding: 40px;
+  background-color: #f4f4f4;
+  width: 500px;
+  height: auto;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+form {
+  width: 100%;
+}
+.input-conatainer {
+  width: 100%;
+  margin: 10px 0px 8px 0px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 13px;
+  border-radius: 18px;
+  border: 1px solid rgb(163, 165, 167);
+}
+.input-conatainer input {
+  border: none;
+  outline: none;
+  background-color: #f4f4f4;
+  flex: 1px;
+  font-size: 16px;
+}
+
+.border-container {
+  width: 500px;
+  display: flex;
+  flex: 1px;
+  gap: 5px;
+  padding-left: 5px;
+}
+.border {
+  flex: 1px;
+  border: 3px solid rgb(85, 230, 85);
+  border-radius: 3px;
+}
+.white {
+  width: 500px;
+  border: 3px solid rgb(127, 126, 126);
+}
+.fa-solid {
+  color: rgb(116, 119, 120);
+}
+
+.button {
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+.Cancel-button {
+  padding: 5px;
+  border: 1px solid wheat;
+  border-radius: 10px;
+}
+.Submit-button {
+  padding: 5px;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  color: #f4f4f4;
+}
+.validation {
+  width: 500px;
+  margin-top: 7px;
+  display: flex;
+  justify-content: flex-start;
+}
