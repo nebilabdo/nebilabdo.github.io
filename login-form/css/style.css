@@ -96,3 +96,18 @@ form {
   display: flex;
   justify-content: flex-start;
 }
+.Submit-button:hover,
+.Cancel-button:hover {
+  background-color: rgb(125, 195, 125);
+  padding: 7px;
+}
+.container:hover,
+input:hover,
+.Submit-button:hover,
+.Cancel-button:hover {
+  cursor: pointer;
+}
+
+.header i:hover {
+  font-size: 34px; 
+}
