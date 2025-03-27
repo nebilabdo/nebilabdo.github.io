@@ -110,7 +110,3 @@ input:hover,
 .Cancel-button:hover {
   cursor: pointer;
 }
-
-.header i:hover {
-  font-size: 34px; /* Adjust the size as needed */
-}
