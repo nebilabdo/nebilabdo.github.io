@@ -15,6 +15,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header i {
+  font-size: 24px;
+}
 
 .container {
   margin: 10px;
@@ -95,4 +98,19 @@ form {
   margin-top: 7px;
   display: flex;
   justify-content: flex-start;
+}
+.Submit-button:hover,
+.Cancel-button:hover {
+  background-color: rgb(125, 195, 125);
+  padding: 7px;
+}
+.container:hover,
+input:hover,
+.Submit-button:hover,
+.Cancel-button:hover {
+  cursor: pointer;
+}
+
+.header i:hover {
+  font-size: 34px; /* Adjust the size as needed */
 }
