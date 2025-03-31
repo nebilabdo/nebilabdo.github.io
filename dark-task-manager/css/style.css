@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #100d23;
+  color: aliceblue;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 20px;
+  /* filter: invert(200%); */
+  align-items: center;
+  margin: 15px 40px 10px 40px;
+  padding: 13px;
+
+  border-radius: 30px;
+  background-color: #211c41;
+}
+nav .links {
+  display: flex;
+  gap: 40px;
+}
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+.nav-button {
+  width: 150px;
+}
+.nav-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-button button {
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  border: none;
+}
+.main-header {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.main-header h1,
+.main-header h3,
+.main-header h4,
+.main-header i {
+  max-width: 300px;
+  padding: 10px 0px 10px 0px;
+}
+.main-header h1 {
+  font-size: xx-large;
+}
+.main-header span,
+.main-header i,
+.main-header h3 {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 1350px;
+
+  margin: 0px 100px 0px 100px;
+}
+.task-card div {
+  border: 1px solid #9694a5;
+  width: 280px;
+  height: 170px;
+  border-radius: 10px;
+}
+.task-card {
+  display: flex;
+  justify-content: space-around;
+}
+.task-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #211c41;
+}
+.task-card-details h4,
+.task-card-details i {
+  width: 200px;
+}
+.task-card-details i {
+  display: flex;
+  justify-content: flex-start;
+}
+.task-card-details button {
+  padding: 10px 40px 10px 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: dodgerblue;
+}
+
+.about-our-websites {
+  margin-top: 100px;
+}
+/* .chart-container div {
+  max-width: 280px;
+} */
+.chart-container {
+  display: flex;
+  align-items: flex-end;
+  width: 400px;
+  height: 350px;
+  background-color: #211c41;
+  border-radius: 10px;
+}
+.chart-container .usability {
+  height: 250px;
+  width: 160px;
+  background-color: #3c394f;
+  border-radius: 10px 10px 0px 10px;
+}
+.chart-container .others {
+  height: 210px;
+  width: 160px;
+  background-color: #3c394f;
+
+  border-radius: 10px;
+}
+.chart-container .marketing {
+  height: 170px;
+  width: 160px;
+  background-color: #3c394f;
+
+  border-radius: 10px;
+}
+.chart-container h2 {
+  padding-bottom: 200px;
+}
+h2 {
+  position: relative;
+  top: -60px;
+  padding-left: 5px;
+}
+.chart-container .usability .usable {
+  height: 180px;
+  position: relative;
+  top: -185px;
+  background-color: rgb(144, 144, 238);
+  /* border-radius: 10px; */
+  border-radius: 10px 10px 0px 10px;
+}
+.chart-container .marketing .markets {
+  height: 100px;
+  position: relative;
+  top: -184px;
+  background-color: rgb(70, 70, 251);
+  border-radius: 10px 10px 10px 0px;
+}
+.chart-container .others .other {
+  position: relative;
+  top: -147px;
+  height: 130px;
+  background-color: rgb(112, 112, 251);
+  border-radius: 10px 10px 0px 0px;
+}
+.about-our-websites {
+  max-height: 600px;
+}
+.about-our-websites h3 {
+  /* padding: 30px; */
+  padding: 30px 0px 0px;
+  margin: 0px 0px 8px 115px;
+}
+
+.both-chart-container-and-promo-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 1410px;
+  /* margin-left: 22px; */
+  padding-bottom: 40px;
+}
+.block-years {
+  display: flex;
+  gap: 7px;
+  max-width: 20px;
+}
+.text-description {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.block-years h1,
+.block-years p,
+.block-subscribers div {
+  width: 214px;
+  height: 71px;
+}
+.block-subscribers {
+  display: flex;
+}
+.subscribes-info {
+  display: flex;
+  gap: 5px;
+}
+.subscribes-info p {
+  display: flex;
+  max-width: 20px;
+  flex-wrap: wrap;
+}
+
+.discover-btn {
+  padding: 4px;
+  margin-top: 5px;
+  width: 100px;
+  color: #f4f4f4;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 10px;
+}
+.promo-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.platform-user h3 {
+  width: 200px;
+
+  margin: 0px 0px 20px 100px;
+
+  font-size: 20px;
+}
+
+.platform-section {
+  display: flex;
+}
+.mockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 350px;
+  background-color: #100d23;
+  margin-left: 94px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  color: #100d23;
+  font-weight: bold;
+}
+.box-containers .box-icons,
+.box-containers .fa-brands {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(6, 193, 193);
+  border-radius: 5px;
+}
+.box-containers .fa-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-containers .fa-solid {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.box-containers .our-followers {
+  width: 50px;
+  height: 50px;
+  flex-grow: 0px;
+  flex-shrink: 1px;
+  margin-top: 70px;
+}
+img {
+  width: 100%;
+}
+.colors-controls div {
+  width: 10px;
+  height: 10px;
+}
+.colors-controls .red {
+  background-color: red;
+}
+.colors-controls .orange {
+  background-color: orange;
+}
+.colors-controls .blue {
+  background-color: rgb(130, 130, 243);
+}
+.colors-controls {
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 10px 0px 10px 60px;
+}
+.colors-controls div {
+  border-radius: 50%;
+}
+.our-followers {
+  display: flex;
+  gap: 20px;
+}
+.our-followers img {
+  border-radius: 50px;
+}
+.platform-section {
+  display: flex;
+  gap: 100px;
+  width: 1140px;
+}
+.our-company {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 30px; */
+}
+
+.our-platforms p {
+  width: 550px;
+  margin-top: 25px;
+  font-size: 20px;
+}
+.our-platforms h2 {
+  margin-top: 90px;
+}
+.btn-containers {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-containers button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+.btn-containers .company-benefit-button {
+  border: 2px solid rgb(70, 70, 251);
+  color: rgb(70, 70, 251);
+  background-color: #100d23;
+}
+.testimonal-containers {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+.testimonal-details {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 40px 40px 40px 0px;
+  margin-right: 40px;
+}
+.testimonal-details img {
+  width: 200px;
+  height: auto;
+  flex-grow: 0px;
+  flex-shrink: 1px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+.testimonal-descriptions {
+  width: 550px;
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  gap: 30px;
+}
+.Testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  height: 250px;
+  margin-top: 50px;
+}
+.suggestions-form input,
+.suggestions-form button {
+  padding: 7px;
+  border-radius: 6px;
+  border: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.comapany-description {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3px;
+  /* color: #f4f4f4; */
+}
+.comapany-description a {
+  color: white;
+}
+.comapany-description h4,
+ul h4 {
+  font-weight: bold;
+}
+.footer-description {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 50px;
+  gap: 10px;
+}
+.footer-button button {
+  padding: 5px;
+  margin-top: 3px;
+  border-radius: 10px;
+  border: none;
+}
+.login-btn,
+.subscribe-btn {
+  background-color: rgb(70, 70, 251);
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.copyright-text {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-containers button,
+.testimonal-details {
+  background-color: #3c394f;
+  color: #f4f4f4;
+}
+hr {
+  margin: 20px 0px 20px 0px;
+}
