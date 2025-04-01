@@ -9,6 +9,7 @@ body {
 }
 
 nav {
+  /* width: 1350px; */
   display: flex;
   justify-content: space-between;
   min-height: 20px;
@@ -19,6 +20,7 @@ nav {
 
   border-radius: 30px;
   background-color: #211c41;
+  filter: brightness(150%) opacity(0.7);
 }
 nav .links {
   display: flex;
@@ -66,7 +68,6 @@ a {
 }
 .container {
   width: 1350px;
-
   margin: 0px 100px 0px 100px;
 }
 .task-card div {
@@ -393,6 +394,7 @@ img {
 }
 
 .footer-container {
+  width: 1350px;
   display: flex;
   justify-content: space-between;
 }
@@ -443,6 +445,7 @@ ul {
 .copyright-text {
   display: flex;
   justify-content: center;
+  margin: 10px 0px 10px 0px;
 }
 
 .btn-containers button,
@@ -451,5 +454,180 @@ ul {
   color: #f4f4f4;
 }
 hr {
-  margin: 20px 0px 20px 0px;
+  width: 1350px;
+
+  margin: 20px 0px 20px 100px;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    min-width: 700px;
+  }
+
+  .container {
+    min-width: 700px;
+
+    margin: 0px 50px 0px 50px;
+  }
+  .main-header {
+    width: 720px;
+    /* display: flex;
+    justify-content: center; */
+  }
+  .chart-container {
+    width: 350px;
+    height: 400px;
+  }
+  .task-card div {
+    width: 200px;
+  }
+  .task-card {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .both-chart-container-and-promo-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .promo-banner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .promo-banner p {
+    max-width: 400px;
+  }
+  .block-subscribers {
+    display: flex;
+  }
+  .chart-container .others .other {
+    position: relative;
+    top: -174px;
+  }
+  .subscribes-info p {
+    display: flex;
+    max-width: 10px;
+    flex-wrap: wrap;
+  }
+  .platform-section {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mockup {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
+  .colors-controls {
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+  .box-containers .box-icons,
+  .box-containers .fa-brands {
+    width: 280px;
+    height: 220px;
+  }
+  .our-platforms p {
+    width: 400px;
+  }
+  /* .our-company {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  } */
+  .our-company {
+    width: 400px;
+  }
+  .our-company p {
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  .our-company h2 {
+    margin-bottom: -40px;
+  }
+  .btn-containers {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .btn-containers button {
+    padding: 5px;
+  }
+  .testimonal-containers {
+    margin-left: 0px;
+  }
+  .testimonal-details {
+    width: 700px;
+    display: flex;
+    gap: 20px;
+  }
+  .suggestions {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-description {
+    margin-left: 45px;
+  }
+  hr {
+    width: 700px;
+    margin-left: 35px;
+  }
+  .our-company {
+    width: 400px;
+  }
+  .our-company p {
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  .our-company h2 {
+    margin-bottom: -40px;
+  }
+  .btn-containers {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .btn-containers button {
+    padding: 5px;
+  }
+  .testimonal-containers {
+    margin-left: 0px;
+  }
+  .testimonal-details {
+    width: 700px;
+    display: flex;
+    gap: 20px;
+  }
+  .suggestions {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-description {
+    margin-left: 45px;
+  }
+  hr {
+    width: 700px;
+    margin-left: 35px;
+  }
+  .copyright-text {
+    width: 700px;
+  }
 }
