@@ -8,23 +8,26 @@ body {
   color: aliceblue;
 }
 
+.container {
+  max-width: 97%;
+}
 nav {
-  /* width: 1350px; */
   display: flex;
   justify-content: space-between;
-  min-height: 20px;
-  /* filter: invert(200%); */
+  height: 50px;
+
   align-items: center;
-  margin: 15px 40px 10px 40px;
-  padding: 13px;
+  margin: 15px 10px 6px 10px;
+  padding: 12px;
 
   border-radius: 30px;
   background-color: #211c41;
   filter: brightness(150%) opacity(0.7);
 }
+
 nav .links {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 a {
   text-decoration: none;
@@ -32,19 +35,19 @@ a {
 }
 .nav-button {
   width: 150px;
-}
-.nav-button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .nav-button button {
   padding: 5px 10px 5px 10px;
   border-radius: 10px;
   border: none;
 }
 .main-header {
-  min-height: 400px;
+  width: 95%;
+  height: 400px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -66,11 +69,8 @@ a {
   display: flex;
   justify-content: center;
 }
-.container {
-  width: 1350px;
-  margin: 0px 100px 0px 100px;
-}
-.task-card div {
+
+.task-card-details {
   border: 1px solid #9694a5;
   width: 280px;
   height: 170px;
@@ -102,8 +102,8 @@ a {
   background-color: dodgerblue;
 }
 
-.about-our-websites {
-  margin-top: 100px;
+.about-our-websites h2 {
+  margin-top: 80px;
 }
 /* .chart-container div {
   max-width: 280px;
@@ -112,7 +112,7 @@ a {
   display: flex;
   align-items: flex-end;
   width: 400px;
-  height: 350px;
+  height: 300px;
   background-color: #211c41;
   border-radius: 10px;
 }
@@ -179,21 +179,21 @@ h2 {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  width: 1410px;
+  width: 100%;
   /* margin-left: 22px; */
   padding-bottom: 40px;
 }
 .block-years {
   display: flex;
   gap: 7px;
-  max-width: 20px;
+  width: 20px;
 }
 .text-description {
   width: 600px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 30px;
 }
 .block-years h1,
 .block-years p,
@@ -210,7 +210,7 @@ h2 {
 }
 .subscribes-info p {
   display: flex;
-  max-width: 20px;
+  width: 20px;
   flex-wrap: wrap;
 }
 
@@ -231,15 +231,19 @@ h2 {
 
 .platform-user h3 {
   width: 200px;
-
   margin: 0px 0px 20px 100px;
-
   font-size: 20px;
 }
-
+.platform-user {
+  margin-top: 70px;
+}
 .platform-section {
   display: flex;
+  /* gap: 100px; */
+  justify-content: space-between;
+  width: 90%;
 }
+
 .mockup {
   display: flex;
   flex-direction: column;
@@ -272,7 +276,7 @@ h2 {
   padding: 20px;
 }
 .box-containers .our-followers {
-  width: 50px;
+  max-width: 50px;
   height: 50px;
   flex-grow: 0px;
   flex-shrink: 1px;
@@ -295,7 +299,7 @@ img {
   background-color: rgb(130, 130, 243);
 }
 .colors-controls {
-  width: 400px;
+  max-width: 400px;
   display: flex;
   justify-content: flex-start;
   gap: 10px;
@@ -311,11 +315,7 @@ img {
 .our-followers img {
   border-radius: 50px;
 }
-.platform-section {
-  display: flex;
-  gap: 100px;
-  width: 1140px;
-}
+
 .our-company {
   display: flex;
   flex-direction: column;
@@ -323,7 +323,7 @@ img {
 }
 
 .our-platforms p {
-  width: 550px;
+  max-width: 550px;
   margin-top: 25px;
   font-size: 20px;
 }
@@ -355,10 +355,10 @@ img {
   justify-content: space-between;
 
   padding: 40px 40px 40px 0px;
-  margin-right: 40px;
+  margin-right: 120px;
 }
 .testimonal-details img {
-  width: 200px;
+  max-width: 200px;
   height: auto;
   flex-grow: 0px;
   flex-shrink: 1px;
@@ -366,7 +366,7 @@ img {
   border-radius: 10px;
 }
 .testimonal-descriptions {
-  width: 550px;
+  max-width: 550px;
   display: flex;
   font-size: 20px;
   flex-direction: column;
@@ -394,7 +394,7 @@ img {
 }
 
 .footer-container {
-  width: 1350px;
+  /* width: 1350px; */
   display: flex;
   justify-content: space-between;
 }
@@ -422,7 +422,7 @@ ul h4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-right: 50px;
+  margin-right: 160px;
   gap: 10px;
 }
 .footer-button button {
@@ -454,180 +454,201 @@ ul {
   color: #f4f4f4;
 }
 hr {
-  width: 1350px;
+  max-width: 1350px;
 
   margin: 20px 0px 20px 100px;
 }
-
-@media screen and (max-width: 700px) {
+@media (min-width: 610px) and (max-width: 900px) {
   nav {
-    min-width: 700px;
-  }
-
-  .container {
-    min-width: 700px;
-
-    margin: 0px 50px 0px 50px;
-  }
-  .main-header {
-    width: 720px;
-    /* display: flex;
-    justify-content: center; */
-  }
-  .chart-container {
-    width: 350px;
-    height: 400px;
-  }
-  .task-card div {
-    width: 200px;
+    max-width: 800px;
+    justify-content: space-between;
+    margin-left: 10px;
   }
   .task-card {
-    width: 700px;
-    display: flex;
+    max-width: 800px;
+    margin-left: 20px;
+    gap: 20px;
+  }
+  .task-card-details {
+    max-width: 252px;
+    max-height: 200px;
     justify-content: space-between;
+  }
+  .task-card-details h4,
+  .task-card-details i {
+    max-width: 150px;
   }
   .both-chart-container-and-promo-container {
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .promo-banner {
-    display: flex;
-    justify-content: space-between;
-  }
-  .promo-banner p {
-    max-width: 400px;
-  }
-  .block-subscribers {
-    display: flex;
-  }
-  .chart-container .others .other {
-    position: relative;
-    top: -174px;
-  }
-  .subscribes-info p {
-    display: flex;
-    max-width: 10px;
-    flex-wrap: wrap;
-  }
-  .platform-section {
-    width: 700px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .mockup {
-    width: 350px;
-    height: 400px;
-    display: flex;
-    margin-left: 0px;
-    padding-bottom: 10px;
-  }
-  .colors-controls {
-    width: 400px;
+    gap: 20px;
     display: flex;
     justify-content: flex-start;
-    padding-left: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
   }
+  .text-description {
+    max-width: 400px;
+  }
+  .chart-container {
+    max-height: 300px;
+  }
+  .platform-user {
+    margin-top: 30px;
+    margin-left: -70px;
+    justify-content: center;
+  }
+  .platform-section {
+    gap: 30px;
+  }
+  .about-our-websites h3 {
+    margin-left: 20px;
+  }
+
+  .our-platforms p {
+    max-width: 400px;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .our-platforms h2 {
+    margin-bottom: -35px;
+  }
+
+  .testimonal-containers {
+    width: 900px;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  .testimonal-details {
+    gap: 20px;
+  }
+  hr {
+    max-width: 700px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    max-width: 600px;
+
+    justify-content: space-between;
+    gap: 10px;
+  }
+  nav .links {
+    gap: 10px;
+  }
+
+  .nav-button {
+    width: 100px;
+    gap: 5px;
+    padding: 0px 9px 1px 0px;
+    margin-left: 40px;
+  }
+  .nav-button button {
+    padding: 2px 1px 2px 2px;
+  }
+  .task-card {
+    max-width: 500px;
+    /* justify-content: space-between; */
+    gap: 10px;
+    margin-left: 10px;
+  }
+
+  .task-card-details {
+    width: 180px;
+    height: 150px;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .task-card-details h4,
+  .task-card-details i {
+    max-width: 130px;
+  }
+
+  .task-card-details button {
+    padding: 10px 4px 10px 5px;
+  }
+
+  .both-chart-container-and-promo-container {
+    max-width: 580px;
+    justify-content: space-between;
+    margin-left: 4px;
+  }
+  .chart-container {
+    margin-top: 5px;
+    max-width: 290px;
+    max-height: 290px;
+  }
+  .promo-banner {
+    max-width: 280px;
+  }
+  .text-description {
+    max-width: 300px;
+    font-size: 22px;
+  }
+
+  .chart-container .others .other {
+    position: relative;
+    top: -175px;
+  }
+  .our-company {
+    max-width: 600px;
+  }
+  .platform-user {
+    margin-left: -80px;
+  }
+  .platform-section {
+    max-width: 600px;
+    display: flex;
+
+    gap: 25px;
+  }
+  .mockup {
+    width: 250px;
+    height: 330px;
+  }
+
   .box-containers .box-icons,
   .box-containers .fa-brands {
-    width: 280px;
-    height: 220px;
+    max-width: 180px;
+    height: 180px;
+  }
+  .colors-controls {
+    margin-right: 190px;
+  }
+  .our-platforms {
+    max-width: 600px;
   }
   .our-platforms p {
-    width: 400px;
-  }
-  /* .our-company {
     width: 300px;
-    display: flex;
-    justify-content: space-between;
-  } */
-  .our-company {
-    width: 400px;
+    gap: 7px;
+    font-size: 17px;
   }
-  .our-company p {
-    max-width: 300px;
-    margin-top: 10px;
+  .our-platforms h2 {
+    margin-bottom: -70px;
   }
-  .our-company h2 {
-    margin-bottom: -40px;
-  }
-  .btn-containers {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-  }
+
   .btn-containers button {
     padding: 5px;
   }
-  .testimonal-containers {
-    margin-left: 0px;
-  }
   .testimonal-details {
-    width: 700px;
-    display: flex;
+    width: 550px;
+    margin-left: -54px;
     gap: 20px;
   }
-  .suggestions {
-    width: 700px;
-    display: flex;
-    justify-content: center;
-  }
   .footer-container {
-    width: 800px;
+    max-width: 590px;
+
+    gap: 30px;
+  }
+  .comapany-description {
     display: flex;
     justify-content: space-between;
   }
-  .footer-description {
-    margin-left: 45px;
+  ul {
+    gap: 30px;
   }
   hr {
-    width: 700px;
-    margin-left: 35px;
-  }
-  .our-company {
-    width: 400px;
-  }
-  .our-company p {
-    max-width: 300px;
-    margin-top: 10px;
-  }
-  .our-company h2 {
-    margin-bottom: -40px;
-  }
-  .btn-containers {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-  }
-  .btn-containers button {
-    padding: 5px;
-  }
-  .testimonal-containers {
-    margin-left: 0px;
-  }
-  .testimonal-details {
-    width: 700px;
-    display: flex;
-    gap: 20px;
-  }
-  .suggestions {
-    width: 700px;
-    display: flex;
+    max-width: 390px;
     justify-content: center;
-  }
-  .footer-container {
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer-description {
-    margin-left: 45px;
-  }
-  hr {
-    width: 700px;
-    margin-left: 35px;
-  }
-  .copyright-text {
-    width: 700px;
   }
 }
