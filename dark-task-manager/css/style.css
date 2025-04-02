@@ -178,10 +178,11 @@ h2 {
 .both-chart-container-and-promo-container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  width: 95%;
   /* margin-left: 22px; */
   padding-bottom: 40px;
+  margin-left: 80px;
 }
 .block-years {
   display: flex;
@@ -236,22 +237,28 @@ h2 {
 }
 .platform-user {
   margin-top: 70px;
+  margin-left: -60px;
 }
 .platform-section {
   display: flex;
   /* gap: 100px; */
   justify-content: space-between;
   width: 90%;
+  gap: 30px;
+}
+.platform-user h3 {
+  margin-left: 150px;
 }
 
 .mockup {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   width: 400px;
   height: 350px;
   background-color: #100d23;
-  margin-left: 94px;
+  margin-left: 144px;
   background-color: #f4f4f4;
   border-radius: 5px;
   color: #100d23;
@@ -259,7 +266,7 @@ h2 {
 }
 .box-containers .box-icons,
 .box-containers .fa-brands {
-  width: 300px;
+  width: 330px;
   height: 200px;
   background-color: rgb(6, 193, 193);
   border-radius: 5px;
@@ -323,12 +330,13 @@ img {
 }
 
 .our-platforms p {
-  max-width: 550px;
+  max-width: 600px;
   margin-top: 25px;
   font-size: 20px;
 }
 .our-platforms h2 {
   margin-top: 90px;
+  margin-bottom: -20px;
 }
 .btn-containers {
   display: flex;
@@ -458,9 +466,63 @@ hr {
 
   margin: 20px 0px 20px 100px;
 }
-@media (min-width: 610px) and (max-width: 900px) {
+@media (min-width: 910px) and (max-width: 1200px) {
   nav {
-    max-width: 800px;
+    width: 80%;
+  }
+  .task-card {
+    width: 80%;
+    margin-left: 3px;
+  }
+  .platform-user {
+    margin-left: -70px;
+    gap: 10px;
+  }
+  .our-platforms p {
+    min-width: 500px;
+  }
+  .our-platforms h2 {
+    margin-bottom: -38px;
+  }
+  .platform-section {
+    justify-content: space-between;
+    width: 75%;
+    gap: 40px;
+  }
+
+  .both-chart-container-and-promo-container {
+    margin-left: 10px;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .text-description {
+    min-width: 480px;
+    font-size: 26px;
+  }
+  .testimonal-details {
+    display: flex;
+    gap: 20px;
+  }
+  .mockup {
+    width: 300px;
+  }
+  .box-containers .box-icons,
+  .box-containers .fa-brands {
+    max-width: 170px;
+    align-items: center;
+  }
+  .testimonal-details {
+    width: 78%;
+  }
+  .footer-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  nav {
+    max-width: 900px;
     justify-content: space-between;
     margin-left: 10px;
   }
@@ -526,15 +588,22 @@ hr {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (min-width: 480px) and (max-width: 600px) {
   nav {
-    max-width: 600px;
-
-    justify-content: space-between;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
+  }
+  nav a {
+    font-size: 13px;
   }
   nav .links {
     gap: 10px;
+  }
+  .main-header {
+    width: 500px;
+    justify-content: center;
   }
 
   .nav-button {
@@ -554,7 +623,7 @@ hr {
   }
 
   .task-card-details {
-    width: 180px;
+    width: 140px;
     height: 150px;
     justify-content: space-between;
     padding: 10px;
@@ -569,21 +638,36 @@ hr {
   }
 
   .both-chart-container-and-promo-container {
-    max-width: 580px;
+    max-width: 500px;
     justify-content: space-between;
     margin-left: 4px;
+    gap: 10px;
   }
   .chart-container {
     margin-top: 5px;
-    max-width: 290px;
+    max-width: 260px;
     max-height: 290px;
   }
-  .promo-banner {
-    max-width: 280px;
+  .chart-container .usability,
+  .chart-container .others,
+  .chart-container .marketing {
+    width: 70px;
   }
-  .text-description {
-    max-width: 300px;
-    font-size: 22px;
+  .usability h2,
+  .others h2,
+  .marketing h2 {
+    font-size: 15px;
+  }
+  .promo-banner {
+    max-width: 250px;
+  }
+  .about-our-websites h3 {
+    margin-left: 3px;
+  }
+  .promo-banner .text-description,
+  .promo-banner p {
+    max-width: 250px;
+    font-size: 15px;
   }
 
   .chart-container .others .other {
@@ -603,13 +687,13 @@ hr {
     gap: 25px;
   }
   .mockup {
-    width: 250px;
+    width: 200px;
     height: 330px;
   }
 
   .box-containers .box-icons,
   .box-containers .fa-brands {
-    max-width: 180px;
+    max-width: 150px;
     height: 180px;
   }
   .colors-controls {
@@ -619,9 +703,9 @@ hr {
     max-width: 600px;
   }
   .our-platforms p {
-    width: 300px;
-    gap: 7px;
-    font-size: 17px;
+    width: 250px;
+    gap: 5px;
+    font-size: 14px;
   }
   .our-platforms h2 {
     margin-bottom: -70px;
@@ -631,13 +715,13 @@ hr {
     padding: 5px;
   }
   .testimonal-details {
-    width: 550px;
-    margin-left: -54px;
+    width: 490px;
+    margin-left: -64px;
     gap: 20px;
   }
   .footer-container {
-    max-width: 590px;
-
+    width: 580px;
+    margin-left: -22px;
     gap: 30px;
   }
   .comapany-description {
