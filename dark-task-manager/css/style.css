@@ -41,7 +41,7 @@ a {
 }
 
 .nav-button button {
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px;
   border-radius: 10px;
   border: none;
 }
@@ -58,7 +58,7 @@ a {
 .main-header h4,
 .main-header i {
   max-width: 300px;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px;
 }
 .main-header h1 {
   font-size: xx-large;
@@ -75,18 +75,17 @@ a {
   width: 280px;
   height: 170px;
   border-radius: 10px;
-}
-.task-card {
-  display: flex;
-  justify-content: space-around;
-}
-.task-card-details {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background-color: #211c41;
 }
+.task-card {
+  display: flex;
+  justify-content: space-around;
+}
+
 .task-card-details h4,
 .task-card-details i {
   width: 200px;
@@ -96,7 +95,7 @@ a {
   justify-content: flex-start;
 }
 .task-card-details button {
-  padding: 10px 40px 10px 40px;
+  padding: 10px 40px;
   border-radius: 10px;
   border: none;
   background-color: dodgerblue;
@@ -116,25 +115,22 @@ a {
   background-color: #211c41;
   border-radius: 10px;
 }
-.chart-container .usability {
-  height: 250px;
+.chart-container .usability,
+.chart-container .others,
+.chart-container .marketing {
   width: 160px;
   background-color: #3c394f;
+  border-radius: 10px;
+}
+.chart-container .usability {
+  height: 250px;
   border-radius: 10px 10px 0px 10px;
 }
 .chart-container .others {
   height: 210px;
-  width: 160px;
-  background-color: #3c394f;
-
-  border-radius: 10px;
 }
 .chart-container .marketing {
   height: 170px;
-  width: 160px;
-  background-color: #3c394f;
-
-  border-radius: 10px;
 }
 .chart-container h2 {
   padding-bottom: 200px;
@@ -733,6 +729,54 @@ hr {
   }
   hr {
     max-width: 390px;
+    justify-content: center;
+  }
+}
+@media (max-width: 478px) {
+  nav {
+    width: 900px;
+  }
+  .main-header {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+  }
+  .task-card {
+    width: 500px;
+    /* justify-content: space-between; */
+    gap: 10px;
+    margin-left: 15px;
+  }
+  .our-platforms p {
+    width: 450px;
+  }
+  .testimonal-details {
+    width: 700px;
+    gap: 20px;
+  }
+  .both-chart-container-and-promo-container {
+    width: 700px;
+    display: flex;
+    gap: 20px;
+  }
+  .text-description {
+    width: 400px;
+  }
+  .suggestions {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-container {
+    width: 950px;
+    justify-content: space-between;
+  }
+  hr {
+    width: 700px;
+    justify-content: center;
+  }
+  .copyright-text {
+    width: 900px;
     justify-content: center;
   }
 }
