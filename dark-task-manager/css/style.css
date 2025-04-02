@@ -464,7 +464,7 @@ hr {
 }
 @media (min-width: 910px) and (max-width: 1200px) {
   nav {
-    width: 80%;
+    width: 100%;
   }
   .task-card {
     width: 80%;
@@ -518,7 +518,7 @@ hr {
 
 @media (min-width: 601px) and (max-width: 900px) {
   nav {
-    max-width: 900px;
+    width: 850px;
     justify-content: space-between;
     margin-left: 10px;
   }
@@ -555,6 +555,7 @@ hr {
     justify-content: center;
   }
   .platform-section {
+    width: 900px;
     gap: 30px;
   }
   .about-our-websites h3 {
@@ -562,7 +563,7 @@ hr {
   }
 
   .our-platforms p {
-    max-width: 400px;
+    max-width: 600px;
     margin-top: 15px;
     font-size: 20px;
   }
@@ -581,6 +582,10 @@ hr {
   hr {
     max-width: 700px;
     justify-content: center;
+  }
+  .footer-container {
+    width: 900px;
+    justify-content: space-between;
   }
 }
 
