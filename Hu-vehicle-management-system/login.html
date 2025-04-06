@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haramaya University Vehicle Management System</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/stylesb.css" />
+  </head>
+  <body>
+    <!-- Login Page -->
+    <div class="login-container" id="login-page">
+      <div class="login-card">
+        <img
+          src="images/Hu-Logo1.png"
+          alt="Haramaya University Logo"
+          class="logo"
+          id="university-logo"
+        />
+        <h2>Vehicle Management System</h2>
+        <form id="login-form">
+          <input type="text" id="username" placeholder="Username" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Login</button>
+          <a href="#">Forgot Password?</a>
+          <p id="login-error" style="color: red; display: none">
+            Invalid username or password!
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Dashboard Page (Hidden Initially) -->
+    <div class="dashboard-container" id="dashboard-page" style="display: none">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <img src="images/bus1.jfif" alt="HU Icon" class="sidebar-logo" />
+          <h3>HU VMS</h3>
+        </div>
+        <ul id="sidebar-menu">
+          <li class="nav-item" data-section="dashboard" data-role="admin">
+            <i class="fas fa-tachometer-alt"></i> Dashboard
+          </li>
+          <li class="nav-item" data-section="requests">
+            <i class="fas fa-file-alt"></i> Request a Vehicle
+          </li>
+          <li class="nav-item" data-section="reports">
+            <i class="fas fa-chart-bar"></i> Reports
+          </li>
+          <li class="nav-item" data-section="logout">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="header">
+          <h1 id="welcome-message">Welcome, Guest</h1>
+          <div class="user-profile">
+            <span id="user-name">Guest</span>
+            <img src="images/admin.jpg" alt="User Avatar" class="avatar" />
+          </div>
+        </div>
+        <div class="content" id="main-content">
+          <!-- Dashboard Content (Admin Only) -->
+          <div
+            class="dashboard-content"
+            id="dashboard-content"
+            style="display: none"
+          >
+            <!-- Fleet Overview -->
+            <div class="section-header">
+              <h2>Fleet Overview</h2>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <h3>Total Vehicles</h3>
+                <p id="total-vehicles">0</p>
+              </div>
+              <div class="card">
+                <h3>Vehicles Available</h3>
+                <p id="vehicles-available">0</p>
+              </div>
+            </div>
+
+            <!-- Vehicle Status -->
+            <div class="section-header">
+              <h2>Vehicle Status</h2>
+            </div>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>License Plate</th>
+                    <th>Seats</th>
+                    <th>Price (ETB)</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="vehicle-status-table">
+                  <!-- Populated dynamically -->
+                  <img src="images/car1.jfif" alt="" />
+                </tbody>
+              </table>
+            </div>
+
+            <!-- All Requests -->
+            <div class="section-header">
+              <h2>All Requests</h2>
+            </div>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Request ID</th>
+                    <th>Requester Names</th>
+                    <th>Destination</th>
+                    <th>Date</th>
+                    <th>Vehicle ID</th>
+                    <th>Status</th>
+                    <th>Assigned Seats</th>
+                  </tr>
+                </thead>
+                <tbody id="all-requests-table">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Requests Content (All Users) -->
+          <div
+            class="request-section"
+            id="requests-content"
+            style="display: none"
+          >
+            <div class="section-header">
+              <h2>Request a Vehicle</h2>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Type</th>
+                  <th>License Plate</th>
+                  <th>Seats Available</th>
+                  <th>Price (ETB)</th>
+                  <th>Availability</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="vehicle-request-table">
+                <!-- Populated dynamically -->
+                <td>
+                  <img
+                    src="images/sedan.jfif"
+                    alt="Vehicle Image"
+                    class="vehicle-image"
+                  />
+                </td>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Reports Content (All Users) -->
+          <div
+            class="report-section"
+            id="reports-content"
+            style="display: none"
+          >
+            <div class="section-header">
+              <h2>Reports</h2>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Request ID</th>
+                  <th>Requester Names</th>
+                  <th>Destination</th>
+                  <th>Date</th>
+                  <th>Vehicle ID</th>
+                  <th>Status</th>
+                  <th>Assigned Seats</th>
+                </tr>
+              </thead>
+              <tbody id="report-table">
+                <!-- Populated dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Request Modal -->
+    <div class="modal" id="request-modal" style="display: none">
+      <div class="modal-content">
+        <span class="close-btn" id="close-modal">×</span>
+        <h2>Vehicle Request Form</h2>
+        <form id="request-form">
+          <select id="request-vehicle-id" required>
+            <option value="" disabled selected>Select a Vehicle</option>
+            <!-- Populated dynamically -->
+          </select>
+          <input
+            type="text"
+            id="requester-name"
+            placeholder="Your Name"
+            required
+          />
+          <textarea
+            id="additional-users"
+            placeholder="Add other user names (comma-separated)"
+            rows="3"
+          ></textarea>
+          <input
+            type="text"
+            id="destination"
+            placeholder="Destination"
+            required
+          />
+          <input type="date" id="request-date" required />
+          <button type="submit">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmation-modal" style="display: none">
+      <div class="modal-content">
+        <span class="close-btn" id="close-confirmation-modal">×</span>
+        <h2>Request Confirmation</h2>
+        <p id="confirmation-message"></p>
+        <button id="confirmation-ok-btn">OK</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
