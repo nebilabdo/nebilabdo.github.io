@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiction Books</title>
+    <link rel="stylesheet" href="css/fiction.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>📚 My Book Store</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="my-library.html">My Library</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+    </nav>
+
+    <div class="book-card">
+      <img src="images/fiction1.jpg" alt="Fiction Book 1" />
+      <h3>Fiction Book Title 1</h3>
+      <p>Author: Author Name</p>
+      <button
+        onclick="addToLibrary('Fiction Book Title 1', 'Author Name', 'images/fiction1.jpg', 'Fiction')"
+      >
+        Add to Library
+      </button>
+    </div>
+
+    <div class="book-card">
+      <img src="images/fiction2.jpg" alt="Fiction Book 2" />
+      <h3>Fiction Book Title 2</h3>
+      <p>Author: Author Name</p>
+      <button
+        onclick="addToLibrary('Fiction Book Title 2', 'Author Name', 'images/fiction2.jpg', 'Fiction')"
+      >
+        Add to Library
+      </button>
+    </div>
+
+    <script src="js/library.js"></script>
+  </body>
+</html>
