@@ -109,8 +109,9 @@ button {
   padding: 3px;
 }
 button:hover {
-  background-color: #ff7f00;
-  cursor: pointer;
+  background-color: #ff7043;
+  transform: scale(1.05);
+  transition: 0.3s ease;
 }
 
 .kitfo-image,
