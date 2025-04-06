@@ -1,0 +1,80 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Orbitron", "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  color: #f0f0f0;
+}
+
+/* Book Card Styling */
+.book-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 255, 255, 0.25);
+}
+
+/* Book Image Styling */
+.book-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Title Styling */
+.book-card h3 {
+  font-size: 20px;
+  color: #00ffff;
+  margin-bottom: 8px;
+}
+
+/* Author Styling */
+.book-card p {
+  font-size: 16px;
+  color: #a3e4ff;
+  margin-bottom: 16px;
+}
+
+/* Button Styling */
+.book-card button {
+  background-color: #00bcd4;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+  background-color: #0097a7;
+}

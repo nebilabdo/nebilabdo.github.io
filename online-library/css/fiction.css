@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+/* Book Card Styling */
+.book-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Cover Image */
+.book-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Book Title */
+.book-card h3 {
+  font-size: 20px;
+  color: #2d3436;
+  margin-bottom: 8px;
+}
+
+/* Author */
+.book-card p {
+  font-size: 16px;
+  color: #636e72;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.book-card button {
+  background-color: #4b6584;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+  background-color: #3d536b;
+}
+
+/* Navigation Styling */
+nav {
+  width: 100%;
+  background-color: #2d3436;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+nav h1 {
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f4f4f9;
+}
+
+/* My Library Page Styling */
+.library-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.library-container .book-card {
+  width: 250px; /* Keeping card width consistent */
+}
