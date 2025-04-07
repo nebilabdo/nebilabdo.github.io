@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 84vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+.highlight {
+  position: relative;
+}
+.highlight::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background-image: linear-gradient(to top left, #ffa500, #ff7f00);
+}
+.header h1 {
+  padding-top: 20px;
+  color: #00ffff;
+  text-align: center;
+}
+.header p {
+  color: #00ffff;
+  margin: 50px 80px 0 80px;
+  font-size: 25px;
+}
+
+/* Navigation */
+nav {
+  background: #4b6584;
+
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 30px;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Books */
+.books {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  margin: 20px;
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+
+.book {
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+  background: linear-gradient(to right, #0f2027, #78b2c6, #2c5364);
+  color: #f4f4f4;
+  border: 2px solid;
+  box-shadow: 0 0 15px #00a6ff;
+  border-radius: 10px;
+}
+
+.book img {
+  width: 170px;
+  height: 180px;
+  border-radius: 5px;
+}
+.book button {
+  padding: 5px;
+  background-color: rgb(67, 179, 191);
+}
+#search-bar {
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+}
+form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.neumorphic {
+  background: #e0e0ec;
+  border-radius: 20px;
+  /* box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff; */
+}
+
+.neumorphic-inset {
+  background: #e0e0ec;
+  border-radius: 20px;
+  box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+}
+
+.neumorphic-card {
+  width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+  width: 300px;
+}
+.neumorphic-input,
+.neumorphic-button {
+  padding: 5px;
+  border: 1px solid orangered;
+}
+footer {
+  background-color: rgba(255, 255, 255, 0.2); /* More transparent white */
+  backdrop-filter: blur(15px); /* Stronger blur effect */
+  color: aliceblue;
+  margin: 500px 0px 0px 0px;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 180px;
+  padding: 40px 0px;
+}
+footer a {
+  color: #00ffff;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  background: #e0e0ec;
+  border-radius: 20px;
+  /* box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff; */
+}
+.login-button {
+  background: #e0e0ec;
+  border-radius: 20px;
+  box-shadow: inset 10px 10px 20px #45b1b1, inset -10px -10px 20px #ffffff;
+}
+.login-card {
+  width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+  width: 300px;
+  box-shadow: 0 0 15px #00a6ff;
+}
+.login-input,
+.login-button {
+  padding: 5px;
+  border: 1px solid rgb(0, 119, 255);
+}

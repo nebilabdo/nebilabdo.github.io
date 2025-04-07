@@ -1,0 +1,99 @@
+/* Basic Styling for My Library */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0f2027, #49accd, #2c5364);
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: #4b6584;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+nav h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+#clear-library-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#clear-library-btn:hover {
+  background-color: #c9302c;
+}
+
+.library-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.category-section {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.category-section h3 {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.book-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 200px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-card img {
+  max-width: 100%;
+  height: auto;
+}
+.book-card h4 {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+.book-card p {
+  font-size: 0.9em;
+  color: #6391db;
+}

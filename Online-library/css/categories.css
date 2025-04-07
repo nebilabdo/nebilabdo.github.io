@@ -1,0 +1,87 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #49accd, #2c5364);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #4b6584;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+nav h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffeaa7;
+}
+
+/* CATEGORY SECTION */
+h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* LIST OF CATEGORIES */
+.category-list {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1000px;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.category-list li {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.category-list li:hover {
+  background-color: #dfe6e9;
+  transform: translateY(-5px);
+}
+
+.category-list li a {
+  text-decoration: none;
+  color: #2d3436;
+  font-weight: 600;
+  font-size: 18px;
+}
