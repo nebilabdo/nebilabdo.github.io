@@ -16,20 +16,20 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="navbar">
+    <div class="navbar sticky">
       <div class="logo"><h2>🍔 Nibilaa Foodies</h2></div>
       <div class="menu-links">
-        <div>Home</div>
-        <div>Menu</div>
-        <div>Chef</div>
-        <div>Contact</div>
+        <div class="link" data-link="1">Home</div>
+        <div class="link" data-link="2">Menu</div>
+        <div class="link" data-link="3">Chef</div>
+        <div class="link" data-link="4">Contact</div>
       </div>
     </div>
     <section class="intro">
       <h1>Welcome to Our Food Menu</h1>
     </section>
 
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <div class="hero">
         <img src="images/hero.jpg" alt="" />
       </div>
@@ -40,12 +40,17 @@
         descriptions.
       </div>
     </section>
-    <section class="food-section">
+    <section class="section food-section" id="menu">
       <h2>Our Special Menu</h2>
       <div class="food-container">
         <div class="food-item">
           <div class="food-image">
-            <img src="images/shiro.jfif" alt="" />
+            <img
+              src="images/shiro.jfif"
+              data-src="images/shiro.jfif"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h3>Shiro(ሺሮ)</h3>
           <p class="food-description">
@@ -55,17 +60,28 @@
         </div>
         <div class="food-item">
           <div class="food-image">
-            <img src="images/doro-wat.jfif" alt="" />
+            <img
+              src="images/doro-wat.jfif"
+              data-src="images/doro-wat.jfif"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h3>Doro Wat(ዶሮ ዋት)</h3>
           <p class="food-description">
-            A spicy chicken stew with <span>hard-boiled</span> eggs, served with injera.
+            A spicy chicken stew with <span>hard-boiled</span> eggs, served with
+            injera.
           </p>
           <button class="btn-drowat">Add to Cart</button>
         </div>
         <div class="food-item">
           <div class="food-image kitfo-image">
-            <img src="images/kitfo.webp" alt="" />
+            <img
+              src="images/kitfo.webp"
+              data-src="images/kitfo.webp"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h3>Kitfo(ቅቶ)</h3>
           <p class="food-description kifto-description">
@@ -75,7 +91,12 @@
         </div>
         <div class="food-item">
           <div class="food-image burgor-image">
-            <img src="images/burgor.jfif" alt="" />
+            <img
+              src="images/burgor.jfif"
+              data-src="images/burgor.jfif"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h3>Burger(ቡርጌር)</h3>
           <p class="food-description">
@@ -85,7 +106,12 @@
         </div>
         <div class="food-item">
           <div class="food-image">
-            <img src="images/pizza.jfif" alt="" />
+            <img
+              src="images/pizza.jfif"
+              data-src="images/pizza.jfif"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h3>Pizza(ፒዛ)</h3>
           <p class="food-description">
@@ -95,17 +121,28 @@
         </div>
         <div class="food-item">
           <div class="food-image image-paella">
-            <img src="images/Paella.webp" alt="" />
+            <img
+              src="images/Paella.webp"
+              data-src="images/paella.webp"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h3>Paella(ፓኤላ)</h3>
           <p class="food-description">
-            A rice dish with seafood, chicken,<span> Tomatoes</span> and vegetables.
+            A rice dish with seafood, chicken,<span> Tomatoes</span> and
+            vegetables.
           </p>
           <button class="btn-paella">Add to Cart</button>
         </div>
         <div class="food-item">
           <div class="food-image">
-            <img src="images/Tibs.jpg" alt="" />
+            <img
+              src="images/Tibs.jpg"
+              data-src="images/Tibs.jpg"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h3>Tibs(ቲብስ)</h3>
           <p class="food-description">
@@ -115,7 +152,12 @@
         </div>
         <div class="food-item">
           <div class="food-image">
-            <img src="images/sushi.jfif" alt="" />
+            <img
+              src="images/sushi.jfif"
+              data-src="images/sushi.jfif"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h3>Sushi(ሱሺ)</h3>
           <p class="food-description">
@@ -125,7 +167,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="section" id="contact">
       <div>
         <h3>
           At Nibilaa Foodies, we aim to bring people together with delicious
@@ -152,5 +194,6 @@
         <p>&copy 2025 Nibilaa Foodies. All rights reserved. ✨</p>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

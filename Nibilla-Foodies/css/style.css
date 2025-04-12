@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #333333;
   background-color: #fff8e1;
 }
@@ -20,6 +20,13 @@ body {
 
   /* margin-bottom: 20px; */
 }
+.navbar div {
+  margin: 0px 5px;
+}
+.navbar.sticky {
+  width: 100%;
+  position: fixed;
+}
 .menu-links {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -29,9 +36,7 @@ body {
   color: #f39c12;
   cursor: pointer;
 }
-.navbar div {
-  margin: 0px 5px;
-}
+
 .intro {
   display: grid;
   place-items: center;
@@ -41,7 +46,7 @@ body {
 .hero-section {
   display: flex;
   width: 100%;
-  height: 350px;
+  height: 87.5vh;
 
   /* align-items: end; */
 }
@@ -55,6 +60,13 @@ body {
   width: 100%;
   height: 100%;
 }
+/* img {
+  transition: filter 0.5s;
+}
+
+.lazy-img {
+  filter: blur(20px);
+} */
 .hero-text {
   position: absolute;
   top: 200px;
@@ -66,12 +78,18 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   font-size: 16px;
   line-height: 1.6;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-radius: 10px;
 }
-.food-section {
+.section {
   display: grid;
   place-content: center;
+
+  transition: transform 2s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(180px);
 }
 .food-container {
   display: flex;
@@ -96,6 +114,47 @@ img {
   flex-grow: 1;
   flex-shrink: 1;
 }
+/* Initially hide images */
+.food-item img {
+  opacity: 0;
+  filter: blur(20px); /* Start with blur */
+  transition: opacity 2s, filter 2s; /* Apply transitions for opacity and blur */
+}
+
+/* When the image becomes visible */
+.food-item img.loaded {
+  opacity: 1; /* Fade in to full visibility */
+  filter: blur(0); /* Remove the blur */
+  position: relative;
+  z-index: -1;
+}
+
+/* Optionally, you can add the transition delay */
+.food-item:nth-child(1) img {
+  transition-delay: 1s;
+}
+.food-item:nth-child(2) img {
+  transition-delay: 1.2s;
+}
+.food-item:nth-child(3) img {
+  transition-delay: 1.4s;
+}
+.food-item:nth-child(4) img {
+  transition-delay: 1.6s;
+}
+.food-item:nth-child(4) img {
+  transition-delay: 1.8s;
+}
+.food-item:nth-child(6) img {
+  transition-delay: 1.1s;
+}
+.food-item:nth-child(7)img {
+  transition-delay: 1.12s;
+}
+.food-item:nth-child(8) img {
+  transition-delay: 1.14s;
+}
+
 .food-description {
   max-width: 200px;
 }
