@@ -303,6 +303,9 @@ footer div {
   .navbar h2 {
     font-size: 11px;
   }
+  .hero-section {
+    height: 70vh;
+  }
   .hero-text {
     font-size: 10px;
   }
@@ -342,6 +345,9 @@ footer div {
   }
   .logo {
     font-size: 8px;
+  }
+  .hero-section {
+    height: 70vh;
   }
   .hero-text {
     font-size: 10px;
