@@ -1,41 +1,63 @@
+<style>
+  body{
+    font-family:'poppins','Inter','Roboto',san-serif';
+  }
+</style>
+
+
 # 🌟 Nebil's Frontend Projects
 
 Welcome to my frontend projects portfolio!  
 This repo includes web projects built with **HTML**, **CSS**, **JavaScript**, and **React**.  
 I'm on my way to becoming a full **MERN stack developer**.
 
+> *Recommended font for viewing: `Poppins`, `Inter`, or `Roboto` — clean, modern, and easy to read.*
+
+---
+
 ## 🚀 Live Projects
 
-View all live demos at:  
+Check out live demos here:  
 **[nebilabdo.github.io/projects](https://nebilabdo.github.io/projects)**
 
 ---
 
 ## 🛠️ Technologies Used
 
-- HTML & CSS – For structure and styling  
-- JavaScript – Dynamic behavior  
-- React – Interactive UI components
+- **HTML & CSS** – For layout and styling  
+- **JavaScript** – Adds interactivity  
+- **React** – Builds dynamic user interfaces
 
 ---
 
-## 🧠 About Me
+## 📁 Featured Projects
 
-I'm **Nebil**, a passionate Computer Science student and aspiring MERN stack developer.  
-I love building modern, user-friendly interfaces and always learning new tech.
-
-
-
----
-
-## 💡 Future Plans👨‍💻
-
-- Add more **React** features  
-- Build complete **MERN stack** apps  
-- Improve design and performance
+- HU Vehicle Management System  
+- Nibilla Foodies  
+- Online Library  
+- Quote Generator *(React)*  
+- Dark Task Manager *(React)*  
+- Login UI, Recipe Page, Testimonial Loop & more...
 
 ---
 
-Thanks for checking out my work! Feel free to explore and follow.
+## 🧑‍💻 About Me
 
-*Font: Inter, Roboto, or any modern sans-serif style is recommended for best viewing.*
+I'm **Nebil**, a passionate Computer Science student & future **MERN Stack** developer.  
+I enjoy creating modern UIs and learning new technologies to grow as a developer.
+
+---
+
+## 🌱 What's Next?
+
+- Build full MERN stack apps  
+- Add more interactive projects  
+- Keep improving performance & design
+
+---
+
+## 🙏 Thank You for Visiting!
+
+If you like what you see, feel free to explore, learn, and follow my journey.  
+**Stay tuned for more projects!**  
+✨ Made with love and passion for coding.
