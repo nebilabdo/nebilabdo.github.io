@@ -28,8 +28,9 @@ I enjoy creating modern UIs and learning new technologies to grow as a developer
 ---
 
 ## 💡 Current learning?
--Add more **React** features
-- Build full **MERN stack** apps  
+
+- Add more **React** features
+- Build full **MERN stack** apps
 - Add more interactive projects  
 - Keep improving performance & design
 
