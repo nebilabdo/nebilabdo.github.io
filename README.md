@@ -7,7 +7,7 @@ Welcome to my frontend projects portfolio!
 This repo includes web projects built with **HTML**, **CSS**, **JavaScript**, and **React**.  
 I'm on my way to becoming a full **MERN stack developer**.
 
-> *Recommended font for viewing: `Poppins`, `Inter`, or `Roboto` — clean, modern, and easy to read.*
+
 
 ---
 
@@ -18,24 +18,7 @@ Check out live demos here:
 
 ---
 
-## 🛠️ Technologies Used
 
-- **HTML & CSS** – For layout and styling  
-- **JavaScript** – Adds interactivity  
-- **React** – Builds dynamic user interfaces
-
----
-
-## 📁 Featured Projects
-
-- HU Vehicle Management System  
-- Nibilla Foodies  
-- Online Library  
-- Quote Generator *(React)*  
-- Dark Task Manager *(React)*  
-- Login UI, Recipe Page, Testimonial Loop & more...
-
----
 
 ## 🧑‍💻 About Me
 
@@ -44,9 +27,9 @@ I enjoy creating modern UIs and learning new technologies to grow as a developer
 
 ---
 
-## 🌱 What's Next?
-
-- Build full MERN stack apps  
+## 💡 Current learning?
+-Add more **React** features
+- Build full **MERN stack** apps  
 - Add more interactive projects  
 - Keep improving performance & design
 
