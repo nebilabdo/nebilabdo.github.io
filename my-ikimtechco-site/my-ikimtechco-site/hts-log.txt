@@ -1,0 +1,13 @@
+HTTrack3.49-6 launched on Fri, 16 May 2025 05:42:43 at https://www.ikimtechco.com/
+(httrack https://www.ikimtechco.com/ -O /home/nebil/my-ikimtechco-site )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+05:43:29	Error: 	"Not Found" (404) at link https://www.ikimtechco.com/img/favicon.ico (from https://www.ikimtechco.com/)
+05:43:33	Error: 	"Not Found" (404) at link https://www.ikimtechco.com/img/carousel-1.jpg (from https://www.ikimtechco.com/css/style.css)
+
+HTTrack Website Copier/3.49-6 mirror complete in 50 seconds : 49 links scanned, 46 files written (9083822 bytes overall) [8727083 bytes received at 174541 bytes/sec], 462138 bytes transferred using HTTP compression in 16 files, ratio 18%, 8.1 requests per connection
+(2 errors, 0 warnings, 0 messages)
