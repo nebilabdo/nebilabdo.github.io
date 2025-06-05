@@ -19,7 +19,7 @@ A simple task manager built with **React**, **Vite**, and **Material UI**.
 
 ```bash
 # Clone the repo
-mkdir task-manager
+mkdir frontend
 cd task-manager
 
 # Install dependencies
