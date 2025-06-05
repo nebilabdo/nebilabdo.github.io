@@ -1,43 +1,40 @@
+# 📝 Task Manager (Frontend Only)
 
+A simple task manager built with **React**, **Vite**, and **Material UI**.
 
+## 🚀 Features
 
-# 🌟 Nebil's Frontend Projects
+- ✅ Add, complete, and delete tasks
+- 🔍 Filter tasks (All, Completed, Incomplete)
+- 🌗 Light/Dark mode toggle with sun/moon icon
+- ⚠️ Validation (task title must not be empty)
 
-Welcome to my frontend projects portfolio!  
-This repo includes web projects built with **HTML**, **CSS**, **JavaScript**, and **React**.  
-I'm on my way to becoming a full **MERN stack developer**.
+## 🛠️ Tech Stack
 
+- React + Vite
+- Material UI (MUI)
+- JavaScript (ES6+)
 
+## 📦 Getting Started
 
----
+```bash
+# Clone the repo
+mkdir task-manager
+cd task-manager
 
-## 🚀 Live Projects
+# Install dependencies
+npm install
 
-Check out live demos here:  
-**[nebilabdo.github.io/projects](https://nebilabdo.github.io/projects)**
+# Run development server
+npm run dev
+```
 
----
+## 🖼️ App Preview
 
+### 🌞 Light Mode
 
+![Light Mode](./assets/light-mode.png)
 
-## 🧑‍💻 About Me
+### 🌙 Dark Mode
 
-I'm **Nebil**, a passionate Computer Science student & future **MERN Stack** developer.  
-I enjoy creating modern UIs and learning new technologies to grow as a developer.
-
----
-
-## 💡 Current learning?
-
-- Add more **React** features
-- Build full **MERN stack** apps
-- Add more interactive projects  
-- Keep improving performance & design
-
----
-
-## 🙏 Thank You for Visiting!
-
-If you like what you see, feel free to explore, learn, and follow my journey.  
-**Stay tuned for more projects!**  
-✨ Made with love and passion for coding.
+![Dark Mode](./assets/dark-mode.png)
