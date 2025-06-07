@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✅ Wlo + ToDo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <nav class="fav-detail">
+            <div class="title">
+                <i class="fa-solid fa-list-check"></i>
+             <h1>WLO-ToDo</h1>
+            </div>
+          </nav>
+        </div>
+          <div class="search-info">
+            <div class="container">
+                <div class="search-selection">
+                    <div class="search-items">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Search" />
+                    </div>
+                  </div>
+            </div>
+          </div>
+        <div class="favorivtes">
+       <div class="container">
+        <h3>Favorites</h3>
+        <div class="fav-details">
+            <div class="fav-content">
+                
+                <button type="button"><i class="fa-solid fa-bolt"></i>MyDay</button>
+            </div>
+            
+          </div>
+          <div class="fav-details">
+            <div class="fav-content">
+                
+            <button type="button"><i class="fa-solid fa-circle-exclamation"></i>Important</button>
+            </div>
+
+            
+          </div>
+          <div class="fav-details">
+            <div class="fav-content">
+                
+            <button type="button"><i class="fa-regular fa-user"></i>Personal</button>
+            </div>
+
+            
+          </div>
+          <div class="fav-details">
+            <div class="fav-content">
+               
+               <button type="button"> <i class="fa-solid fa-grip"></i>All</button>
+            </div>
+
+            
+          </div>
+          <div class="fav-details">
+            <div class="fav-content">
+                
+            <button><i class="fa-solid fa-circle-check"></i>Completed</button>
+            </div>
+
+            
+          </div>
+          <div class="fav-details">
+            <div class="fav-content">
+                
+                <button type="button"><i class="fa-solid fa-clipboard-list"></i>Asign to me</button>
+            </div>
+
+            
+          </div>
+       </div>
+        </div>
+      </div>
+    
+    <header class="header">
+      <div class="header-container">
+        <div class="create-newtask">
+          <div>
+            <h2></h2>
+            <h3>March </h3>
+            <h3>2025</h3>
+          </div>
+          <div>
+            <button type="submit">+ New Task</button>
+          </div>
+        </div>
+        <h3 class="display-result">😢 You have not any task in this completed tag!</h3>
+      </div>
+    </header>
+    <footer class="footer">
+      <div class="container">
+        <div class="user-details">
+          <div class="my-profile">
+           <div class="container">
+            <div class="image-holder"><img src="images/profile.jpg" alt=""></div>
+            <div >
+              <h2 >Nebil Abdo</h2>
+              <p>nebilbromance@gmail.com</p>
+            </div>
+            <div class="user-icon">
+              <i class="fa-solid fa-bell"></i>
+              <i class="fa-solid fa-gear"></i>
+            </div>
+           </div>
+          </div>
+          <div class="calender">
+            <div class="container"><div class="date-display"><h3>SELECT DATE</h3></div></div>
+            <form action="" id="select-month">
+              <div class="year-calander">
+                <div class="select-years">
+                    <select name="select-year" id=""  class="year-container">
+                        <div class="year-lists">
+                          
+                            <option value="">2008</option>
+                            <option value="">2011</option>
+                            <option value="">2014</option>
+                            <option value="">2017</option>
+                            <option value="">2020</option>
+                        
+                        </div>
+      
+                        <div class="year-lists">
+                         
+                            <option value="">2009</option>
+                            <option value="">2012</option>
+                            <option value="">2015</option>
+                            <option value="">2018</option>
+                            <option value="">2021</option>
+                          
+                          <option >2024</option>
+                        </div>
+                        <div class="year-lists">
+                         <option value="">2010</option>
+                         <option value="">2013</option>
+                         <option value="">2016</option>
+                            <option value="">2019</option>
+                            <option value="">2022</option> 
+                            <option value="">2025</option>
+                        </div>
+                      </select>
+                      <div>
+                        <button type="button" id="prev-month"><</button>
+                        <button type="button" id="next-month">></button>
+                      </div>
+                </div>
+
+                <div class="calander">
+                  <div class="container">
+                    <div class="calander-day-name">
+                      <p>S</p>
+                      <p>M</p>
+                      <p>T</p>
+                      <p>W</p>
+                      <p>TH</p>
+                      <p>F</p>
+                      <p>S</p>
+                    </div>
+                    <div class="calander-day-number">
+                      <div>
+                        <p class="empty"></p>
+                        <p class="empty"></p>
+                        <p class="empty"></p>
+                        <p class="empty"></p>
+                        <p class="empty"></p>
+                        <p class="empty"></p>
+                        <p>1</p>
+                      </div>
+                      <div>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                      </div>
+                      <div>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                      </div>
+                      <div>
+                        <p>16</p>
+                        <p>17</p>
+                        <p>18</p>
+                        <p>19</p>
+                        <p>20</p>
+                        <p>21</p>
+                        <p>22</p>
+                      </div>
+                      <div>
+                        <p>23</p>
+                        <p>24</p>
+                        <p>25</p>
+                        <p>26</p>
+                        <p>27</p>
+                        <p>28</p>
+                        <p>29</p>
+                      </div>
+                      <div>
+                        <p>30</p>
+                      <p>31</p>
+                      <p class="empty"></p>
+                      <p class="empty"></p>
+                      <p class="empty"></p>
+                      <p class="empty"></p>
+                      <p class="empty"></p>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                    <div class="save-selection">
+                        <button type="button">CANCEL</button>
+                        <button type="button">Ok</button>
+                    </div>
+                    <h4 class="task-result">Completed task</h4>
+                   <div class="error-task"><h3> 😢</h3>
+                    <h4>Sry you have not completed task on <span>Mar 26 2025</span></h4></div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </footer>
+  </body>
+</html>
